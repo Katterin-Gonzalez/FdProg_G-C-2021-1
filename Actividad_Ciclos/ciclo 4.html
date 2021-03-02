@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3 Ciclo While</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: oblique;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CICLO WHILE</h1>
+        <hr>
+        <br>
+        <br>
+        <table border="5">
+            <th>NOMBRE</th><th>APELLIDOS</th><th>NOTA 1</th><th>NOTA 2</th><th>NOTA 3</th><th>NOTA FINAL</th>
+            <tbody id="cuerpo" >
+                
+            </tbody>
+        </table>
+        <script>
+            alert('INGRESE LOS DATOS, AL TERMINAR LLENAR TODOS LOS CAMPOS CON UN ESPACIO');
+            var nombr;
+            var apelli='';
+            var nota_1=0;
+            var nota_2=0;
+            var nota_3=0;
+            var suma=0;
+            var prom=0;
+            var salida='';
+            var n=0;
+      
+        
+        while(nombr!=' ') {
+            var nombr=prompt('INGRESE EL NOMBRE DEL ESTUDIANTE');
+            var apelli=prompt('INGRESE EL APELLIDO DEL ESTUDIANTE');
+            var nota_1=prompt('INGRESE LA PRIMERA NOTA')
+            var nota_2=prompt('INGRESE LA SEGUNDA NOTA')
+            var nota_3=prompt('INGRESE LA TERCERA NOTA')
+            nota_1=parseInt(nota_1);
+            nota_2=parseInt(nota_2);
+            nota_3=parseInt(nota_3);
+            prom=(nota_1+nota_2+nota_3)/3;
+           
+
+            salida+='<tr><td>'+nombr+'</td><td>'+apelli+'</td><td>'+nota_1+'</td><td>'+nota_2+'</td><td>'+nota_3+'</td><td>'+prom+'</td></tr>';
+            
+        } 
+        
+
+        
+       
+       
+        
+        document.getElementById('cuerpo').innerHTML=salida;
+        </script>
+
+
+
+    </center>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "actividad_ciclos",
+  "version": "1.0.0",
+  "description": "realizar ejercicios sobre uso de ciclos ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ciclos"
+  ],
+  "author": "Katterin Gonzalez",
+  "license": "ISC"
+}

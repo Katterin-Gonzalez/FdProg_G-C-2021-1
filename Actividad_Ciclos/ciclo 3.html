@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3 Ciclo While</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: oblique;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CICLO WHILE</h1>
+        <hr>
+        <br>
+        <br>
+        <table border="5">
+            <th>Números</th>
+            <tbody id="cuerpo">
+                
+            </tbody>
+        </table>
+        <script>
+            alert('INTRODUSCA UN NUMERO CUANDO DESEE TERMINAR INGRESE CERO')
+        var n=-1;
+        var cont=0;
+        var suma=0;
+        var num;
+        var promedi;
+        var salida='';
+        
+        while(num!=0) {
+            var num=prompt('INTRODUSCA UN NUMERO');
+            num=parseInt(num);
+            n=n+1;
+            suma+=num;
+            promedi=suma/n;
+            salida+='<tr><td>'+num+'</td></tr>';
+
+        } 
+        salida+='<tr><td>'+'La Suma es: '+suma+'</td></tr>';
+        salida+='<tr><td>'+'Numeros distintos de cero: '+n+'</td></tr>';
+        salida+='<tr><td>'+'el promedio es: '+promedi+'</td></tr>';
+       
+        
+        document.getElementById('cuerpo').innerHTML=salida;
+        </script>
+
+
+
+    </center>
+</body>
+</html>
