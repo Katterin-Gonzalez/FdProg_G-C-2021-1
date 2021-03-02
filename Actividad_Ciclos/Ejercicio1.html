@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo 2 Ciclo FOR</title>
+    <title>Ciclo FOR</title>
     <style>
         body{
             background-color: rgb(231, 97, 171);
@@ -29,13 +29,13 @@
         </table>
         <script>
             var salida='';
-            var numero=prompt("DIGITE UN NUMERO")
+            var numero=prompt("DIGITE UN NÚMERO")
             var suma=0;
             var multi=0
             var contPar=0;
             var contImp=0;
             for(var i=1;i<=numero; i++){
-                suma+=i;  //suma=suma+i; instrucción acumuladora
+                suma+=i;  
                 if(i%2==0){
                     contPar++;
                 }
@@ -47,10 +47,10 @@
                 }
                 salida+='<tr><td>'+i+'</td></tr>';
             }
-            salida+='<tr><td>'+'La Suma Numero es: '+suma+'</td></tr>';
-            salida+='<tr><td>'+'Cantidad Numeros Pares: '+contPar+'</td></tr>';
-            salida+='<tr><td>'+'Cantidad Numeros Impares: '+contImp+'</td></tr>';
-            salida+='<tr><td>'+'Cantidad Numeros multiplos de 5: '+multi+'</td></tr>';
+            salida+='<tr><td>'+'La suma de los números es: '+suma+'</td></tr>';
+            salida+='<tr><td>'+'Cantidad de números pares: '+contPar+'</td></tr>';
+            salida+='<tr><td>'+'Cantidad de números impares: '+contImp+'</td></tr>';
+            salida+='<tr><td>'+'Cantidad de multiplos de 5: '+multi+'</td></tr>';
            
 
             document.getElementById('cuerpo').innerHTML=salida;

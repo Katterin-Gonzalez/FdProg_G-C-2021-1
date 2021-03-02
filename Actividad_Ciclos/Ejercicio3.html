@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo 3 Ciclo While</title>
+    <title>Ciclo While</title>
     <style>
         body{
             background-color: aqua;
@@ -17,7 +17,7 @@
 </head>
 <body>
     <center>
-        <h1>CICLO WHILE</h1>
+        <h1>CICLO WHILE 1</h1>
         <hr>
         <br>
         <br>
@@ -28,7 +28,7 @@
             </tbody>
         </table>
         <script>
-            alert('INTRODUSCA UN NUMERO CUANDO DESEE TERMINAR INGRESE CERO')
+            alert('INTRODUZCA UN NÚMERO, CUANDO DESEE TERMINAR INGRESE CERO')
         var n=-1;
         var cont=0;
         var suma=0;
@@ -37,7 +37,7 @@
         var salida='';
         
         while(num!=0) {
-            var num=prompt('INTRODUSCA UN NUMERO');
+            var num=prompt('INTRODUZCA UN NÚMERO');
             num=parseInt(num);
             n=n+1;
             suma+=num;
@@ -46,8 +46,8 @@
 
         } 
         salida+='<tr><td>'+'La Suma es: '+suma+'</td></tr>';
-        salida+='<tr><td>'+'Numeros distintos de cero: '+n+'</td></tr>';
-        salida+='<tr><td>'+'el promedio es: '+promedi+'</td></tr>';
+        salida+='<tr><td>'+'Números distintos de cero: '+n+'</td></tr>';
+        salida+='<tr><td>'+'El promedio es: '+promedi+'</td></tr>';
        
         
         document.getElementById('cuerpo').innerHTML=salida;
